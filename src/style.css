@@ -1,0 +1,19 @@
+body {
+   background: rgb(49,46,129);
+   /* background: linear-gradient(156deg, rgba(49,46,129,1) 0%, rgb(130, 218, 255) 100%);  */
+   background: conic-gradient(at 0% 100%, rgb(15, 23, 42), rgb(88, 28, 135), rgb(15, 23, 42)); 
+   
+   background-repeat: no-repeat;
+   background-size: cover;
+   height: 100vh;
+}
+
+
+
+h1, h2 {
+   font-family: 'Dela Gothic One', display;
+}
+
+button, p, a {
+   font-family: 'Didact Gothic', sans-serif;
+}

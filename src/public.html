@@ -1,0 +1,37 @@
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+   <title>Τι να παραγγειλω</title>
+   
+   <link rel="stylesheet" href="./style.css">
+   <link rel="preconnect" href="https://fonts.bunny.net">
+   <link href="https://fonts.bunny.net/css?family=dela-gothic-one:400|didact-gothic:400" rel="stylesheet" />
+   
+   <script src="https://cdn.tailwindcss.com"></script>
+   <script src="./app.js"></script>
+</head>
+<body>
+   <div class="flex flex-col gap-8 justify-center items-center h-screen">
+      <div class="w-1/3 bg-white flex justify-center items-center rounded-xl bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-20 border border-gray-100">
+         <div class="p-[40px] space-y-2">
+            <h1 class="text-4xl text-center text-white">Τι να παραγγείλω;</h1>
+            <p class="text-xl text-center text-white ">Πάλι δεν ξέρεις τι να φας;<br>Τόσο που σκέφτηκες να γκουγκλάρεις;<br>Για λύπηση η φάση σου...</p>
+         </div>
+      </div>
+      <button id="button" class="w-1/3 bg-white space-y-8 p-6 flex flex-col justify-center items-center rounded-xl bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-20 border border-gray-100 hover:bg-opacity-30 transition-all duration-500">
+         <h2 id="button-text" class="text-white text-center text-2xl">Πάτα εδώ ή μείνε νηστικός</h2>
+         <div class="aspect-square w-48 max-w-48">
+            <img id="category-img" src="../icons/question.svg.png" alt="Εικόνα με φαγητό"/>
+         </div>
+         <h2 id="category-title" class="text-white text-center text-2xl"></h2>
+         <p id="button-again" class="hidden text-white text-center ">(Αν όχι ξαναπάτα...)</p>
+      </button>
+      <div class="flex justify-between gap-4 w-1/3">
+         <a id="e-food" href="" class="hidden w-1/2"><button class="bg-white px-6 py-3 w-full flex flex-col justify-center items-center rounded-xl bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-20 border border-gray-100 text-white font-gothic text-lg hover:bg-opacity-30 hover:text-red-600 hover:border-red-600 hover:bg-red-300 transition-all duration-500">Δες το στο e-food</button></a>
+         <a id="wolt" href="" class="hidden w-1/2"><button class="bg-white px-6 py-3 w-full flex flex-col justify-center items-center rounded-xl bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-20 border border-gray-100 text-white font-gothic text-lg hover:bg-opacity-30 hover:text-cyan-600 hover:border-cyan-600 hover:bg-cyan-300 transition-all duration-500">Δες το στο wolt</button></a>
+      </div>
+   </div>
+</body>
+</html>
