@@ -10,7 +10,7 @@
    <link href="https://fonts.bunny.net/css?family=dela-gothic-one:400|didact-gothic:400" rel="stylesheet" />
    
    <script src="https://cdn.tailwindcss.com"></script>
-   <script src="./app.js"></script>
+   <script src="./functionality.js"></script>
 </head>
 <body class="">
    <div class="flex flex-col gap-4 md:gap-8 py-4 px-5 lg:px-0 justify-start lg:justify-center items-center h-screen">
@@ -20,17 +20,21 @@
             <p class="text-xl text-center text-white ">Πάλι δεν ξέρεις τι να φας;<br>Τόσο που σκέφτηκες να γκουγκλάρεις;<br>Για λύπηση η φάση σου...</p>
          </div>
       </div>
-      <button id="button" class= "w-full sm:w-3/5 2xl:w-2/5 bg-white space-y-8 p-6 flex flex-col justify-center items-center rounded-xl bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-20 border border-gray-100 hover:bg-opacity-30 transition-all duration-500">
-         <h2 id="button-text" class="text-white text-center text-2xl">Πάτα εδώ ή μείνε νηστικός</h2>
+      <button id="orderButton" class= "w-full sm:w-3/5 2xl:w-2/5 bg-white space-y-8 p-6 flex flex-col justify-center items-center rounded-xl bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-20 border border-gray-100 hover:bg-opacity-30 transition-all duration-500">
+         <h2 id="buttonText" class="text-white text-center text-2xl">Πάτα εδώ ή μείνε νηστικός</h2>
          <div class="aspect-square w-48 max-w-48">
-            <img id="category-img" src="../icons/question.webp" alt="Εικόνα με φαγητό"/>
+            <img id="categoryImage" src="../icons/question.webp" alt="Εικόνα με φαγητό"/>
          </div>
-         <h2 id="category-title" class="text-white text-center text-2xl"></h2>
-         <p id="button-again" class="hidden text-white text-center ">(Αν όχι ξαναπάτα...)</p>
+         <h2 id="categoryTitle" class="text-white text-center text-2xl"></h2>
+         <p id="buttonAgain" class="hidden text-white text-center ">(Αν όχι ξαναπάτα...)</p>
       </button>
       <div class="w-full sm:w-3/5 2xl:w-2/5 flex flex-col md:flex-row justify-between gap-4 md:gap-8">
-         <a id="e-food" href="" target="_blank" class="hidden w-full md:w-1/2"><button class="bg-white px-6 py-3 w-full flex flex-col justify-center items-center rounded-xl bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-20 border border-gray-100 text-white font-gothic text-lg hover:bg-opacity-30 hover:text-red-600 hover:border-red-600 hover:bg-red-300 transition-all duration-500">Δες το στο e-food</button></a>
-         <a id="wolt" href="" target="_blank" class="hidden w-full md:w-1/2"><button class="bg-white px-6 py-3 w-full flex flex-col justify-center items-center rounded-xl bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-20 border border-gray-100 text-white font-gothic text-lg hover:bg-opacity-30 hover:text-cyan-600 hover:border-cyan-600 hover:bg-cyan-300 transition-all duration-500">Δες το στο wolt</button></a>
+         <a id="efood" href="" target="_blank" class="hidden w-full md:w-1/2">
+            <button class="bg-white px-6 py-3 w-full flex flex-col justify-center items-center rounded-xl bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-20 border border-gray-100 text-white font-gothic text-lg hover:bg-opacity-30 hover:text-red-600 hover:border-red-600 hover:bg-red-300 transition-all duration-500">Δες το στο e-food</button>
+         </a>
+         <a id="wolt" href="" target="_blank" class="hidden w-full md:w-1/2">
+            <button class="bg-white px-6 py-3 w-full flex flex-col justify-center items-center rounded-xl bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-20 border border-gray-100 text-white font-gothic text-lg hover:bg-opacity-30 hover:text-cyan-600 hover:border-cyan-600 hover:bg-cyan-300 transition-all duration-500">Δες το στο wolt</button>
+         </a>
       </div>
       <div class="absolute bottom-2 left-4">
          <p class="text-violet-300 opacity-70">⌨️ built by <a href="https://github.com/teobourloglou" target="_blank" class="font-bold">@teobourloglou</a></p>
