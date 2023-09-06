@@ -56,14 +56,9 @@ document.addEventListener('DOMContentLoaded', () => {
       }
 
       const category = generateRandomCategory();
-      img.classList.add('fade-out');
-
-      setTimeout(() => {
-          categoryTitle.innerHTML = category[0] + ';';
-          img.src = './icons/' + category[1] + '.webp';
-          efood.href = efood_link + category[2];
-          wolt.href = wolt_link + category[3];
-          img.classList.remove('fade-out');
-      }, 500);
+      categoryTitle.innerHTML = category[0] + ';';
+      img.src = './icons/' + category[1]  + '.webp';
+      efood.href = efood_link + category[2];
+      wolt.href = wolt_link + category[3];
    });
 });
