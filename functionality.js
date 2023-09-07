@@ -26,10 +26,23 @@ const foodCategories = {
    'Category26'   :   ['Falafel'      ,'falafel'       ,'falafel',       'falafel'     ],
 };
 
+const lastGeneratedCategories = [];
+
 function generateRandomCategory() {
    const categoryKeys = Object.keys(foodCategories);
-   const randomKeyIndex = Math.floor(Math.random() * categoryKeys.length);
-   const randomKey = categoryKeys[randomKeyIndex];
+   let randomKeyIndex;
+   let randomKey;
+   
+   do {
+      randomKeyIndex = Math.floor(Math.random() * categoryKeys.length);
+      randomKey = categoryKeys[randomKeyIndex];
+   } while (lastGeneratedCategories.includes(randomKey));
+
+   if (lastGeneratedCategories.length >= 3) {
+      lastGeneratedCategories.shift();
+   }
+
+   lastGeneratedCategories.push(randomKey);
    return foodCategories[randomKey];
 }
 
