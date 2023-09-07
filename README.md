@@ -25,4 +25,6 @@ Welcome to the world of gastronomic indecision! The days of not knowing what to 
 
 Built for fun, with love, (and a little hunger) by [@teobourloglou](https://github.com/teobourloglou).
 
+HTML, Tailwind, Vanilla JavaScript<br>
+
 Enjoy your meal, and remember, a well-fed soul is a happy soul! 🍔🍕🍣🥗🍟
