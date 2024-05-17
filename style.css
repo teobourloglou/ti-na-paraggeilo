@@ -4,7 +4,7 @@
 
 body {
    background: rgb(49,46,129);
-   background: conic-gradient(at 0% 100%, rgb(15, 23, 42), rgb(88, 28, 135), rgb(15, 23, 42)); 
+   background: conic-gradient(at 0% 100%, rgb(15, 23, 42), rgb(88, 28, 135), rgb(15, 23, 42));
    background-repeat: no-repeat;
    background-size: cover;
    height: 100vh;
